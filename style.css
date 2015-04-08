@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.video {
+	margin: auto;
+	text-align: center;
+	width: 900px;
+}
+
+.video video {
+	float: left;
+}
+
+.progressBarControl {
+	/* #3F3F3F*/
+	float: left;
+	width: 100%;
+	background-color: #1f1f1f;
+	color: #DCDCDC;
+}
+
+.progressBar {
+	background-color: #3F3F3F;
+	height: 8px;
+	width: 100%;
+}
+
+.progressTime {
+}
+
+.video-play {
+	padding: 4.5px 0;
+	min-width: 54px;
+}
+
+.video-volume {
+	padding: 4.5px 10px;
+}
+
+.video-time {
+	padding: 6px 10px 0 10px;
+	float: left;
+	font-size: 14px;
+}
+
+.video-option, .video-expand {
+	padding: 4.5px 10px;
+	float: right;
+	cursor: pointer;
+}
+
+.video-play, .video-volume {
+	float: left;
+	cursor: pointer;
+}
+
+.video-play:hover, .video-volume:hover, .video-option:hover, .video-expand:hover {
+	background-color: #DCDCDC;
+	color: #1f1f1f;
+ -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+     -ms-transition: all 0.3s linear;
+      -o-transition: all 0.3s linear;
+         transition: all 0.3s linear;
+    text-shadow: 0px 0px 2px #3F3F3F;
+}

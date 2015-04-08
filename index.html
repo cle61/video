@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="utf-8" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+		<script type="text/javascript" src="myPlugin.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	</head>
+	<body>
+		<div class="video">
+			<video width="100%" height="auto" poster="http://www.supportduweb.com/page/media/videoTag/BigBuckBunny.png">
+				<source src="http://clips.vorwaerts-gmbh.de/VfE_html5.mp4" type="video/mp4">
+				<source src="http://clips.vorwaerts-gmbh.de/VfE.webm" type="video/webm">
+				<source src="http://clips.vorwaerts-gmbh.de/VfE.ogv" type="video/ogg">
+				Ici l'alternative à la vidéo : un lien de téléchargement, un message, etc.
+			</video>
+			<div class="progressBarControl">
+		        <div class="progressBar">
+		        </div>
+		        <div class="progressTime">
+		        	<div class="video-play">
+		        		<i class="fa fa-play"></i>
+		        	</div>
+
+		        	<div class="video-volume">
+		        		<i class="fa fa-volume-up"></i>
+		        	</div>
+
+		        	<div class="video-time">
+		        		<span>0:00</span>
+		        	</div>
+
+		        	<div class="video-expand">
+		        		<i class="fa fa-expand"></i>
+		        	</div>
+
+		        	<div class="video-option">
+		        		<i class="fa fa-cog"></i>
+		        	</div>
+		        </div>
+		    </div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		$(function() {
+			$(this).myPlugin(null);
+		});
+	</script>
+</html>
