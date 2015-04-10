@@ -58,8 +58,9 @@
 
 		    var progress = $('.progressBar');
 
-		    /*progress.style.width = percent + '%';
-		    progress.textContent = percent + '%';*/
+		    progress.width(percent + '%');
+		    $('.video-time span').text(formatTime(time)+' / '+duration);
+		    
 		    //<i class="fa fa-repeat"></i>
 
 		    console.log(duration);
@@ -69,6 +70,26 @@
 		    	$('.video-play i').removeClass('fa-pause').addClass('fa-repeat');
 		    };
 		});
+
+		function formatTime(time) {
+		    var hours = Math.floor(time / 3600);
+		    var mins  = Math.floor((time % 3600) / 60);
+		    var secs  = Math.floor(time % 60);
+			
+		    if (secs < 10) {
+		        secs = "0" + secs;
+		    }
+			
+		    if (hours) {
+		        if (mins < 10 & hours == 0) {
+		            mins = "0" + mins;
+		        }
+				
+		        return hours + ":" + mins + ":" + secs; // hh:mm:ss
+		    } else {
+		        return mins + ":" + secs; // mm:ss
+		    }
+		}
 
 	};
 
