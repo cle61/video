@@ -13,7 +13,7 @@
 	float: left;
 }
 
-.progressBarControl {
+.barControl {
 	/* #3F3F3F*/
 	float: left;
 	width: 100%;
@@ -21,10 +21,16 @@
 	color: #DCDCDC;
 }
 
-.progressBar {
+.progressBarControl {
 	background-color: #3F3F3F;
 	height: 8px;
 	width: 100%;
+}
+
+.progressBar {
+	background-color: #73b64e;
+	width: 0px;
+	height: 100%;
 }
 
 .progressTime {
