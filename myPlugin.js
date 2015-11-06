@@ -10,6 +10,7 @@
 		var parameters = $.extend(defaultParams, userParams);
 
 		var player = $('video')[0];
+		var elem = document.getElementById("myvideo"); // balise video
 		var current_volume = 1;
 		var duration = player.duration;    // Durée totale
     	var time     = player.currentTime; // Temps écoulé
@@ -69,6 +70,17 @@
 		    if (duration <= time+0.0001) {
 		    	$('.video-play i').removeClass('fa-pause').addClass('fa-repeat');
 		    };
+		});
+
+		// Fullscreen
+		$('.video-expand').on('click', function() {
+			if (elem.requestFullscreen) {
+			  	elem.requestFullscreen();
+			} else if (elem.mozRequestFullScreen) {
+			  	elem.mozRequestFullScreen();
+			} else if (elem.webkitRequestFullscreen) {
+			  	elem.webkitRequestFullscreen();
+			}
 		});
 
 		function formatTime(time) {
