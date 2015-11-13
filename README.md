@@ -1,10 +1,10 @@
 # video
 
-Contributor :
-- Clément Prod'homme : Cle61
+**Contributor :**
+- Cle61  - https://github.com/Cle61
 
-Screenshot :
+**Screenshot :**
 ![alt tag](http://clementprodhomme.com/img/portfolio/video-small.jpg)
 
-Website : 
+**Website :**
 - http://clementprodhomme.com/
